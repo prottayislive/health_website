@@ -1,0 +1,85 @@
+:root{
+    --red: #f9030f;
+    --green: rgba(174, 215, 104, 1);
+    --white: #fff;
+    --black: #000;
+    --grey: rgba(196, 196, 196, 1);
+    --blue: #68c3d4;
+    --darkcream: rgba(127, 121, 126, 1);
+    --dark: rgba(101, 99, 90, 1);
+}
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: #68c3d4;
+}
+
+/* services design */
+.services{
+    padding: 8rem calc((100vw - 1200px)/ 2);
+    background: var(--white);
+}
+
+.services_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+
+}
+.services_feature {
+    margin-bottom: 2.5rem;
+    font-size: clamp (2rem 6vw 3rem);
+    text-transform: uppercase;
+
+}
+.services_img{
+    width: 100%;
+    height: 100%;
+}
+
+.services_heading{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.servives_features{
+    list-style-type: none;
+}
+.topline{
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .services_container{
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+.myservice a{
+    display: block;
+    border:1px solid gray;
+  
+    border-radius: 16px;
+    padding:20px;
+}
+.myservice a:hover{
+    background-color: #db3069;
+}
+
+.active{
+ background-color: #68c3d4;
+ 
+}
+.error{
+    color: red !important;
+    font-size: .7rem !important;
+
+}
+
